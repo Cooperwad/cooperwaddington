@@ -17,27 +17,83 @@
 
         }
 
+        section {
+            margin-bottom: 75px;
+        }
+
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>Computer science major @ udel</p>
+        <p>My name's Cooper and I'm a junior student at the University of Delaware studying computer science. <br>
+        I'm currently looking for an internship or research opportunity</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <p>coming soon</p>
+        <div class="cs-tabs">
+            <input
+              class="radiotab"
+              tabindex="1"
+              name="tabs"
+              type="radio"
+              id="tabstart"
+              checked="checked"
+            />
+            <label class="label" for="tabstart">Index</label>
+            <div class="panel" tabindex="1">
+              <h3>Click through tabs to view project details :)</h3>
+            </div>
+            <input
+              class="radiotab"
+              name="tabs"
+              tabindex="1"
+              type="radio"
+              id="tabone"
+            />
+            <label class="label" for="tabone">CNN Flower Classification</label>
+            <div class="panel" tabindex="1">
+              <h3><a href = "https://github.com/Cooperwad/flower_classification">Flower Classification with a Convolutional Neural Network</a></h2>
+              <p>Convolutional neural network (CNN) to classify images of flowers into categories respective to their species.</p>
+              <p>Built with: Python, TensorFlow, Matplotlib</p>
+            </div>
+            <input
+              class="radiotab"
+              tabindex="1"
+              name="tabs"
+              type="radio"
+              id="tabtwo"
+            />
+            <label class="label" for="tabtwo">Job Search Application</label>
+            <div class="panel" tabindex="1">
+                <h3><a href = "https://github.com/jacobjeremiahjohnson/job-search-application">Job Hub and Search Application</a></h2>
+                <p>Developed a Handshake/LinkedIn like application for users to browse jobs sourced from multiple locations <br> in a single hub and submit applications through.</p>
+                <p>Built with: Java, GUI Libraries</p>
+            </div>
+            <input
+              class="radiotab"
+              tabindex="1"
+              name="tabs"
+              type="radio"
+              id="tabthree"
+            />
+            <label class="label" for="tabthree">Infinite Runner Game</label>
+            <div class="panel" tabindex="1">
+              <h3>Infinite Runner Game</h3>
+              <p>Developed an infinite runner game similar to flappy bird in which the player has to jump over obstacles and aim for a high score</p>
+              <p>Built with: Java</p>
+            </div>
+          </div>    
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email me at cooperwaddington1@gmail.com</p>
+        <div class="gif-container"> 
+            <p>Email me at <a href="mailto:cooperwaddington1@gmail.com">cooperwaddington1@gmail.com</a>!</p>
+            <img src="images/mail.gif" alt="gif">
+        </div>
     </section>
 </body>
 </html>
