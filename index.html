@@ -21,27 +21,47 @@
             margin-bottom: 75px;
         }
 
-        .corner {
+        /* .corner {
             position: fixed;
             top: 10px;
             right: 10px;
 
+        } */
+
+        .cs-tabs {
+            width: 600px;
+            padding: 10px 15px;
         }
+
+        .cs-hr {
+          border-bottom-color: #8c9284;
+          border-top-color: #292c21;
+          margin-block-start: 0.5em;
+          margin-block-end: 0.5em;
+          border-width: 1px;
+          width: 50%;
+        }
+
+
+
 
     </style>
 </head>
 <body>
-    <div class="corner">
+    <!-- <div class="corner">
         <h3>Progress To Graduation</h3>
         <div class="cs-progress-bar">
             <div style="width: 75%" class="bars"></div>
         </div>
-    </div>
+    </div> -->
     <section id="about">
         <h2>About Me</h2>
         <p>My name's Cooper Waddington and I'm a junior student at the University of Delaware studying computer science. <br>
         I'm currently looking for an internship or research opportunity, if interested please contact me at the below listed email!</p>
     </section>
+
+    <hr class="cs-hr" />
+
     <section id="projects">
         <h2>Projects</h2>
         <div class="cs-tabs">
@@ -80,7 +100,7 @@
             <label class="label" for="tabtwo">Job Search Application</label>
             <div class="panel" tabindex="1">
                 <h3><a href = "https://github.com/jacobjeremiahjohnson/job-search-application">Job Hub and Search Application</a></h2>
-                <p>Developed a Handshake/LinkedIn like application for users to browse jobs sourced from multiple locations <br> in a single hub and submit applications through.</p>
+                <p>Developed a Handshake/LinkedIn like application for users to browse jobs sourced from multiple locations in a single hub and submit applications through.</p>
                 <p>Built with: Java, GUI Libraries</p>
             </div>
             <input
@@ -98,6 +118,9 @@
             </div>
           </div>    
     </section>
+
+    <hr class="cs-hr" />
+
     <section id="contact">
         <h2>Contact</h2>
         <div class="gif-container"> 
